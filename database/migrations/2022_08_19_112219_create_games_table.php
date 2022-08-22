@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('inStock');
             $table->string('platform');
             $table->string('typeDisk');
-
             $table->timestamps();
         });
     }

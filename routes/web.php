@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\ComputerCreateComponent;
 use App\Http\Livewire\GamesCreateComponent;
 use App\Http\Livewire\GamesEditComponent;
 use App\Http\Livewire\GamesIndexComponent;
@@ -23,5 +24,6 @@ Route::get('/', function () {
 Route::get('/register', \App\Http\Livewire\Auth\Register::class);
 
 Route::get('/games/criar', GamesCreateComponent::class);
-Route::get('games/edit/{game}', GamesEditComponent::class);
+Route::get('games/edit/{id}', GamesEditComponent::class);
 Route::get('games', GamesIndexComponent::class);
+Route::get('/computador/criar', ComputerCreateComponent::class);

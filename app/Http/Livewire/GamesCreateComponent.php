@@ -24,7 +24,7 @@ class GamesCreateComponent extends Component
             'game.launched' => 'required',
             'game.price' => 'required',
             'game.inStock' => 'required',
-            'game.description' => 'nullable'
+            'game.description' => 'nullable',
         ];
     }
 
@@ -47,7 +47,7 @@ class GamesCreateComponent extends Component
     {
         $this->validate();
         $this->game->save();
-        return redirect('/');
+        return redirect('/games');
     }
 
     public function render()

@@ -12,7 +12,8 @@
             <th scope="col">Estoque do Jogo</th>
             <th scope="col">Plataforma do Jogo</th>
             <th scope="col">Tipo de Midia</th>
-            <th scope="col"><a href="/games/edit/{game}"><button>Editar</button></a></th>
+            <th scope="col">Editar</th>
+
         </tr>
     </thead>
     @foreach ($games as $game)
@@ -25,6 +26,7 @@
                 <td scope="row">{{ $game->inStock }}</td>
                 <td scope="row">{{ $game->platform }}</td>
                 <td scope="row">{{ $game->typeDisk }}</td>
+                <td scope="col"><a href="/games/edit/{id}"><button>Editar</button></a></td>
             </tr>
         </tbody>
     @endforeach

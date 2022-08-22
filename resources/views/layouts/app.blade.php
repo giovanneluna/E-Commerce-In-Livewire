@@ -2,23 +2,23 @@
 
 <head>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark ">
+        <div class="container-fluid ">
             <a class="navbar-brand" href="/">GIka Eletronics</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="GIKA ELETRONICS"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/games">Jogos</a>
+                        <a class="nav-link text-light" href="/games">Jogos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/register">Cadastar Cliente</a>
+                        <a class="nav-link text-light" href="/register">Cadastar Cliente</a>
                     </li>
                 </ul>
             </div>

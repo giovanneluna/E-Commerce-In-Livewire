@@ -42,7 +42,7 @@ class GamesEditComponent extends Component
     {
         $this->validate();
         $this->game->save();
-        return redirect('/');
+        return redirect('/games');
     }
 
     public function render()
