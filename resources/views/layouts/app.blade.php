@@ -18,10 +18,7 @@
                         <a class="nav-link" href="/games">Jogos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/register">Cadastar Usuario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="/register">Cadastar Cliente</a>
                     </li>
                 </ul>
             </div>
