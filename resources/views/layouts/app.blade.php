@@ -20,6 +20,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" href="/register">Cadastar Cliente</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/computador/criar">Criar Computador</a>
+                    </li>
                 </ul>
             </div>
         </div>

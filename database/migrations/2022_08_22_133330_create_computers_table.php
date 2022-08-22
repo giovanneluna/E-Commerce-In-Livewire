@@ -9,21 +9,20 @@ return new class extends Migration
 
     public function up()
     {
-        Schema::create('games', function (Blueprint $table) {
+        Schema::create('computers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description');
-            $table->date('launched');
+            $table->string('videocard');
+            $table->string('processor');
+            $table->string('memory');
+            $table->string('storage');
             $table->string('price');
-            $table->string('inStock');
-            $table->string('platform');
-            $table->string('typeDisk');
             $table->timestamps();
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('games');
+        Schema::dropIfExists('computers');
     }
 };

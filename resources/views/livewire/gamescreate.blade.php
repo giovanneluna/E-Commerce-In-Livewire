@@ -6,7 +6,7 @@
                 <input class="form-control" wire:model="game.name" placeholder="Ex:League of Legends" type="text"
                     id="name">
                 @error('name')
-                    <span>{{ $message }}</span>
+                    <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <br>
@@ -62,8 +62,9 @@
                 @enderror
             </div>
             <br>
+            @livewire('image-upload')
             <div class="col-md-4">
-                <input type="submit" value="Register">
+                <input type="submit" value="Register" class="btn btn-outline-success">
             </div>
         </div>
     </form>

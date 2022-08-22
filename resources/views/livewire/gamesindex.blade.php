@@ -1,7 +1,7 @@
 <center>
-    <h1>Produtos</h1>
+    <h1>Jogos</h1>
 </center>
-<a href="/games/criar"><button>Registrar</button></a>
+<a href="/games/criar"><button class="btn btn-outline-success">Registrar</button></a>
 <table class=" table table-bordered text-dark text-center">
     <thead class="table-dark">
         <tr>
