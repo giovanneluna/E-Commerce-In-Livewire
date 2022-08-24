@@ -20,6 +20,11 @@ class ImageUpload extends Component
         $url = $this->image->store('images', 'public');
     }
 
+    public function export()
+    {
+        return response()->download(storage_path('storage/app/images/mibr.jpg'));
+    }
+
     public function render()
     {
         return view('livewire.image-upload');
