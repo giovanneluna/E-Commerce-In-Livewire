@@ -12,7 +12,13 @@ class ComputersIndexComponent extends Component
 
     public function mount()
     {
-        $this->computers = Computer::all();
+        $this->computers = $this->getComputer();
+    }
+
+    private function getComputer()
+    {
+
+        return Computer::all();
     }
 
     public function render()
@@ -25,5 +31,6 @@ class ComputersIndexComponent extends Component
     {
         session()->flash('message', 'Post successfully updated.');
         $computer->delete();
+        $this->computers = $this->getComputer();
     }
 }

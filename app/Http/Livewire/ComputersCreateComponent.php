@@ -16,7 +16,7 @@ class ComputersCreateComponent extends Component
             'computer.videocard' => 'required',
             'computer.processor' => 'required',
             'computer.memory' => 'required',
-            'computer.price' => 'required',
+            'computer.price' => 'required|numeric',
             'computer.storage' => 'required',
         ];
     }
@@ -36,13 +36,13 @@ class ComputersCreateComponent extends Component
     }
 
     protected $messages = [
-        'computer.name' => 'Insira o Nome do Jogo.',
-        'computer.videocard' => 'Insira o Modelo da Placa de Video.',
-        'computer.processor' => 'Insira o Nome do Processor.',
-        'computer.memory' => 'Insira o Modelo da Memoria Ram.',
-        'computer.storage' => 'Insira o Tipo e Modelo de Armazenamento.',
-        'computer.price' => 'Insira o Preço Total do Produto.',
-
+        'computer.name.required' => 'Insira o Nome do Jogo.',
+        'computer.videocard.required' => 'Insira o Modelo da Placa de Video.',
+        'computer.processor.required' => 'Insira o Nome do Processor.',
+        'computer.memory.required' => 'Insira o Modelo da Memoria Ram.',
+        'computer.storage.required' => 'Insira o Tipo e Modelo de Armazenamento.',
+        'computer.price.required' => 'Insira o Preço Total do Produto.',
+        'computer.price.numeric' => 'Não é possivel inserir letras ',
     ];
 
 

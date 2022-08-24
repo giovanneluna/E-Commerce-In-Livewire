@@ -22,8 +22,8 @@ class GamesCreateComponent extends Component
             'game.platform' => 'required',
             'game.typeDisk' => 'required',
             'game.launched' => 'required',
-            'game.price' => 'required',
-            'game.inStock' => 'required',
+            'game.price' => 'required|numeric',
+            'game.inStock' => 'required|numeric',
             'game.description' => 'nullable',
         ];
     }
@@ -42,6 +42,15 @@ class GamesCreateComponent extends Component
         ];
     }
 
+    protected $messages = [
+        'game.name.required' => 'O nome do jogo não foi preenchido',
+        'game.platform.required' => 'É necessario informar o tipo de Plataforma',
+        'game.typeDisk.required' => 'É necessario informar o tipo de midia',
+        'game.launched.required' => 'É necessario informar a Data de Lançamento',
+        'game.price.required' => 'É necessario informar o Preço do jogo',
+        'game.inStock.required' => 'É necessario informar a quantidade em estoque ',
+
+    ];
 
     public function register()
     {

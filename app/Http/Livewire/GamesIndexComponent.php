@@ -11,12 +11,19 @@ class GamesIndexComponent extends Component
 
     public function mount()
     {
-        $this->games = Game::all();
+        $this->games = $this->getGames();
     }
+
+    private function getGames()
+    {
+        return Game::all();
+    }
+
 
     public function delete(Game $game)
     {
         $game->delete();
+        $this->games = $this->getGames();
     }
 
 

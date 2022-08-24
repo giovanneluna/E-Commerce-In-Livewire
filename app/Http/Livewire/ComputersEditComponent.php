@@ -18,7 +18,7 @@ class ComputersEditComponent extends Component
             'computer.processor' => 'required',
             'computer.memory' => 'required',
             'computer.storage' => 'required',
-            'computer.price' => 'required',
+            'computer.price' => 'required|numeric',
         ];
     }
 
@@ -34,6 +34,16 @@ class ComputersEditComponent extends Component
             'computer.price' => 'Preço',
         ];
     }
+
+    protected $messages = [
+        'computer.name.required' => 'Insira o Nome do Jogo.',
+        'computer.videocard.required' => 'Insira o Modelo da Placa de Video.',
+        'computer.processor.required' => 'Insira o Nome do Processor.',
+        'computer.memory.required' => 'Insira o Modelo da Memoria Ram.',
+        'computer.storage.required' => 'Insira o Tipo e Modelo de Armazenamento.',
+        'computer.price.required' => 'Insira o Preço Total do Produto.',
+        'computer.price .numeric' => 'Não é possivel inserir letras'
+    ];
 
 
     public function update()
