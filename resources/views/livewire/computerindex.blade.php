@@ -4,9 +4,6 @@
         <h1>Computadores</h1>
     </center>
 
-    <div wire:poll class="text-end">
-        <h3>Horario Atual</h3> {{ now() }}
-    </div>
     <a href="/computador/criar"><button class="btn btn-outline-success">Registrar</button></a>
     <table class=" table table-bordered text-dark text-center">
         <thead class="table-dark">

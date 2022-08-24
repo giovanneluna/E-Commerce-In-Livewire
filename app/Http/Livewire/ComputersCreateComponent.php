@@ -31,18 +31,21 @@ class ComputersCreateComponent extends Component
             'computer.memory' => 'Memoria',
             'computer.storage' => 'Armazenamento',
             'computer.price' => 'Preço',
+
         ];
     }
 
     protected $messages = [
-        'game.name' => 'Insira o Nome do Jogo.',
-        'game.videocard' => 'Insira o Modelo da Placa de Video.',
-        'game.processor' => 'Insira o Nome do Processor.',
-        'game.memory' => 'Insira o Modelo da Memoria Ram.',
-        'game.storage' => 'Insira o Tipo e Modelo de Armazenamento.',
-        'game.price' => 'Insira o Preço Total do Produto.',
+        'computer.name' => 'Insira o Nome do Jogo.',
+        'computer.videocard' => 'Insira o Modelo da Placa de Video.',
+        'computer.processor' => 'Insira o Nome do Processor.',
+        'computer.memory' => 'Insira o Modelo da Memoria Ram.',
+        'computer.storage' => 'Insira o Tipo e Modelo de Armazenamento.',
+        'computer.price' => 'Insira o Preço Total do Produto.',
 
     ];
+
+
 
 
     public function mount()
@@ -55,7 +58,6 @@ class ComputersCreateComponent extends Component
     {
         $this->validate();
         $this->computer->save();
-        session()->flash('message', 'Post successfully updated.');
         return redirect()->to('/computador');
     }
 

@@ -7,7 +7,8 @@
                       <input class="form-control" wire:model="game.name" placeholder="Ex:League of Legends" type="text"
                           id="name">
                       @error('game.name')
-                          <span class="text-danger">{{ $message }}</span>
+                          <span
+                              class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger">{{ $message }}</span>
                       @enderror
                   </div>
                   <br>
@@ -22,7 +23,8 @@
                           <option value="nintendos">NintendoSwitch</option>
                       </select>
                       @error('game.platform')
-                          <span class="text-danger">{{ $message }}</span>
+                          <span
+                              class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger">{{ $message }}</span>
                       @enderror
                   </div>
                   <br>
@@ -34,7 +36,8 @@
                           <option value="physical">Fisica</option>
                       </select>
                       @error('game.typeDisk')
-                          <span class="text-danger">{{ $message }}</span>
+                          <span
+                              class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger">{{ $message }}</span>
                       @enderror
                   </div>
                   <br>
@@ -43,7 +46,8 @@
                       <input class="form-control" wire:model="game.launched" type="date" name="launched"
                           id="launched">
                       @error('game.launched')
-                          <span>{{ $message }}</span>
+                          <span
+                              class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger">{{ $message }}</span>
                       @enderror
                   </div>
                   <div class="col-md-4">
@@ -51,7 +55,8 @@
                       <input class="form-control" wire:model="game.price" type="text" name="price"
                           placeholder="R$ 70,00" id="price">
                       @error('game.price')
-                          <span>{{ $message }}</span>
+                          <span
+                              class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger">{{ $message }}</span>
                       @enderror
                   </div>
                   <div class="col-md-4">
@@ -59,7 +64,8 @@
                       <input class="form-control" wire:model="game.inStock" type="text" name="inStock"
                           id="inStock">
                       @error('game.inStock')
-                          <span>{{ $message }}</span>
+                          <span
+                              class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger">{{ $message }}</span>
                       @enderror
                   </div>
                   <br>
@@ -68,7 +74,8 @@
                       <input class="form-control" wire:model="game.description" type="text" name="description"
                           id="description">
                       @error('game.description')
-                          <span>{{ $message }}</span>
+                          <span
+                              class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger">{{ $message }}</span>
                       @enderror
                   </div>
                   <br>

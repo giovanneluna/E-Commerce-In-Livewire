@@ -6,8 +6,9 @@
                     <label class="col-form-label">Nome do Jogo</label>
                     <input class="form-control" wire:model="game.name" placeholder="Ex:League of Legends" type="text"
                         id="name">
-                    @error('name')
-                        <span>{{ $message }}</span>
+                    @error('game.name')
+                        <span
+                            class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger    ">{{ $message }}</span>
                     @enderror
                 </div>
                 <br>
@@ -21,6 +22,10 @@
                         <option value="xbx">Xbox</option>
                         <option value="nintendos">NintendoSwitch</option>
                     </select>
+                    @error('game.platform')
+                        <span
+                            class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger    ">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="col-auto">
                     <label class="col-form-label">Tipo de Midia</label>
@@ -29,36 +34,44 @@
                         <option value="digital">Digital</option>
                         <option value="physical">Fisica</option>
                     </select>
+                    @error('game.typeDisk')
+                        <span
+                            class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger    ">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="col-auto">
                     <label class="col-form-label">Data de Lançamento</label>
                     <input class="form-control" wire:model="game.launched" type="date" name="launched"
                         id="launched">
-                    @error('launched')
-                        <span>{{ $message }}</span>
+                    @error('game.launched')
+                        <span
+                            class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger    ">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-auto">
                     <label class="col-form-label">Preço</label>
                     <input class="form-control" wire:model="game.price" type="text" name="price"
                         placeholder="R$ 70,00" id="price">
-                    @error('price')
-                        <span>{{ $message }}</span>
+                    @error('game.price')
+                        <span
+                            class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger    ">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-auto">
                     <label class="col-form-label">Quantidade em Estoque</label>
                     <input class="form-control" wire:model="game.inStock" type="text" name="inStock" id="inStock">
-                    @error('inStock')
-                        <span>{{ $message }}</span>
+                    @error('game.inStock')
+                        <span
+                            class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger    ">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-auto">
                     <label class="col-form-label">Descrição</label>
                     <input class="form-control" wire:model="game.description" type="text" name="description"
                         id="description">
-                    @error('description')
-                        <span>{{ $message }}</span>
+                    @error('game.description')
+                        <span
+                            class="text-light border-2 py-1 px-1 rounded border-red-700 bg-red-200 bg-danger    ">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="col-auto">

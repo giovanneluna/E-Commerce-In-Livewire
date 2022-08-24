@@ -17,11 +17,13 @@ class ComputersIndexComponent extends Component
 
     public function render()
     {
+
         return view('livewire.computerindex')->extends('layouts.app');
     }
 
     public function delete(Computer $computer)
     {
+        session()->flash('message', 'Post successfully updated.');
         $computer->delete();
     }
 }

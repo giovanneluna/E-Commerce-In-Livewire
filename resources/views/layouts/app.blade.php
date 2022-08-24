@@ -1,7 +1,6 @@
 <html>
 
 <head>
-
     <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container-fluid ">
             <a class="navbar-brand" href="/">GIka Eletronics</a>
@@ -14,12 +13,35 @@
                     <li class="nav-item ">
                         <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="/games">Jogos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="/computador">Computadores</a>
-                    </li>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Jogos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="/games/criar">Cadastrar Jogo</a></li>
+                                    <li><a class="dropdown-item" href="/games">Lista de Jogos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Computadores
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="/computador/criar">Cadastrar Computador</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/computador">Lista de Computadores</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -31,6 +53,7 @@
 
 <body>
     @yield('content')
+
 
 
     @livewireScripts
